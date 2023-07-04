@@ -1,0 +1,39 @@
+.table {
+    display: table;
+    width: 100%;
+  }
+  
+  .row {
+    display: table-row;
+  }
+  
+  .box1 {
+    display: table-cell;
+    padding: 5px;
+    width:95%;
+    border: 1px solid #ccc;
+    border-right-width: 0px;
+  }
+  .box2 {
+    display: table-cell;
+    border: 1px solid #ccc;
+    border-left-width: 0px;
+    box-shadow: 5px 5px #a0a0a0;
+    padding: 5px;
+    width:5%;
+  }
+  .box3 {
+    display: table-cell;
+    padding: 5px;
+    width:70%;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px #a0a0a0;
+  }
+  .box4 {
+    display: table-cell;
+    background-color: #DCDCDC;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px #a0a0a0;
+    padding: 5px;
+    width:30%;
+  }
