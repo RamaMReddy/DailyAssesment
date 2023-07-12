@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/b62e6ddcd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="co-bg-container">
+        <nav class="co-nav-bar">
+            <h1 class="co-nav-bar__heading">Checkout</h1>
+            <ul class="co-nav-bar__unordered-list">
+                <li class="co-nav-bar_breadcrumb-item co-nav-baritem"><a class="co-nav-bar_navlink" href="#">Shipping</a></li>
+                <li class="co-nav-bar_breadcrumb-item co-nav-baritem co-nav-baritem--payment-method"><a class="co-nav-bar_navlink" href="#">Payment Method</a></li>
+                <li class="co-nav-bar_breadcrumb-item co-nav-bar_item">Confirmation</li>
+            </ul>
+            <i class="fa-solid fa-square-xmark co-nav-bar__x-mark-icon "></i>
+        </nav>
+        <div class="co-bg-container__co-subsection">
+            <div class="co-subsection__wallet-newcard-section">
+                <div class="co-wallet-newcard-section__wallet-section">
+                    <h1 class="co-wallet-section__heading">Wallet</h1>
+                    <hr class="co-wallet-section__horizontal-line">
+                    <div class="co-wallet-section__card-section">
+                        <div class="co-card-section__card">
+                            <img src="https://res.cloudinary.com/dd3hnxui2/image/upload/v1688808265/IMG-20230708-WA0012_locrpw.jpg " class="co-card__image">
+                            <p class="co-card-section__ends-with">Ending With 8899 </p>
+                        </div>
+                        <div class="co-card-section_card co-card-section_card--selected-card">
+                            <img src="https://res.cloudinary.com/dd3hnxui2/image/upload/v1688808164/IMG-20230708-WA0010_nvrkzc.jpg " class="co-card__image">
+                            <p class="co-card-section__ends-with">Ending With 8899</p>
+                        </div>
+                        <div class="co-card-section__card">
+                            <img src="https://res.cloudinary.com/dd3hnxui2/image/upload/v1688807959/IMG-20230708-WA0017_eqni8v.jpg " class="co-card__image">
+                            <p class="co-card-section__ends-with">Ending With 8899</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="co-wallet-newcard-section__new-section">
+                    <h1 class="co-wallet-section__heading">New Card</h1>
+                    <hr class="co-wallet-section__horizontal-line">
+                    <form class="co-new-section__user-card-details-form">
+                        <input class="co-user-card-details-form__name-on-card" placeholder="Name on Card">
+                        <input class="co-user-card-details-form__name-on-card" placeholder="XXXX-XXXX-XXXX-XXXX">
+                        <div class="co-user-card-details-form__MM-YY-on-card-section">
+                            <input class="co-user-card-details-form__MM-YY-on-card" placeholder="MM/YY">
+                            <input class="co-user-card-details-form__MM-YY-on-card" placeholder="CVV">
+                        </div>
+                        <button class="co-user-card-details-form__continue-button">CONTINUE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="co-subsection__products-section">
+                <div class="co-products-section__product-section">
+                    <div class="co-product-section__product-card">
+                        <div class="co-product-card__img-description-wrapper">
+                            <img src="https://res.cloudinary.com/dnroew7f3/image/upload/v1688300044/1_eh77s0.jpg" class="co-product-card__image">
+                            <div class="co-product-card__product-description">
+                                <h1 class="co-product-description__product-heading ">Mobile Holder</h1>
+                                <p class="co-product-description__product-color">black</p>
+                                <p class="co-product-description__product-quantity">Quantity: 1</p>
+                            </div>
+                        </div>
+                        <p class="co-product-card__product-price">$ 10.00</p>
+                    </div>
+                    <div class="co-product-section__product-card">
+                        <div class="co-product-card__img-description-wrapper">
+                            <img src="https://res.cloudinary.com/dnroew7f3/image/upload/v1688300138/2_ffwrae.jpg" class="co-product-card__image">
+                            <div class="co-product-card__product-description">
+                                <h1 class="co-product-description__product-heading">Rado Watch</h1>
+                                <p class="co-product-description__product-color">black</p>
+                                <p class="co-product-description__product-quantity">Quantity: 1</p>
+                            </div>
+                        </div>
+                        <p class="co-product-card__product-price">$ 10.00</p>
+                    </div>
+                    <div class="co-product-section__product-card">
+                        <div class="co-product-card__img-description-wrapper">
+                            <img src="https://res.cloudinary.com/dnroew7f3/image/upload/v1688300353/AdobeStock_305031727_Preview_sm4vvt.jpg" class="co-product-card__image">
+                            <div class="co-product-card__product-description">
+                                <h1 class="co-product-description__product-heading">C type to Micro Converter</h1>
+                                <p class="co-product-description__product-color">black</p>
+                                <p class="co-product-description__product-quantity">Quantity: 1</p>
+                            </div>
+                        </div>
+                        <p class="co-product-card__product-price">$ 10.00</p>
+                    </div>
+                    <div class="co-product-section_product-card co-product-section_product-card--mobile-case">
+                        <div class="co-product-card__img-description-wrapper">
+                            <img src="https://res.cloudinary.com/dnroew7f3/image/upload/v1688300346/4_tpgll6.jpg" class="co-product-card__image">
+                            <div class="co-product-card__product-description">
+                                <h1 class="co-product-description__product-heading">Mobile Case </h1>
+                                <p class="co-product-description__product-color">black</p>
+                                <p class="co-product-description__product-quantity">Quantity: 1</p>
+                            </div>
+                        </div>
+                        <p class="co-product-card__product-price">$ 10.00</p>
+                    </div>
+                </div>
+
+                <div class="co-bill-section__sub-total-section">
+                    <div class="co-sub-total-section__price-wrapper">
+                        <p class="co-sub-total-section__heading">Sub Total</p>
+                        <p class="co-sub-total-section__subtotal-price">$ 100.00</p>
+                    </div>
+                    <div class="co-sub-total-section__price-wrapper">
+                        <p class="co-sub-total-section__heading">Shipping</p>
+                        <p class="co-sub-total-section__subtotal-price">$ 10.00</p>
+                    </div>
+                    <div class="co-sub-total-section__price-wrapper">
+                        <p class="co-sub-total-section__heading">Taxes</p>
+                        <p class="co-sub-total-section__subtotal-price">$ 5.00</p>
+                    </div>
+                </div>
+                <div class="co-total-section__price-wrapper">
+                    <p class="co-total-section__heading">Total</p>
+                    <p class="co-total-section__subtotal-price">$ 115.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/b62e6ddcd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="co-bg-container">
+        <nav class="co-nav-bar">
+            <h1 class="co-nav-bar__heading">Checkout</h1>
+            <ul class="co-nav-bar__unordered-list">
+                <li class="co-nav-bar_breadcrumb-item co-nav-baritem"><a class="co-nav-bar_navlink" href="#">Shipping</a></li>
+                <li class="co-nav-bar_breadcrumb-item co-nav-baritem co-nav-baritem--payment-method"><a class="co-nav-bar_navlink" href="#">Payment Method</a></li>
+                <li class="co-nav-bar_breadcrumb-item co-nav-bar_item">Confirmation</li>
+            </ul>
+            <i class="fa-solid fa-square-xmark co-nav-bar__x-mark-icon "></i>
+        </nav>
+        <div class="co-bg-container__co-subsection">
+            <div class="co-subsection__wallet-newcard-section">
+                <div class="co-wallet-newcard-section__wallet-section">
+                    <h1 class="co-wallet-section__heading">Wallet</h1>
+                    <hr class="co-wallet-section__horizontal-line">
+                    <div class="co-wallet-section__card-section">
+                        <div class="co-card-section__card">
+                            <img src="https://res.cloudinary.com/dd3hnxui2/image/upload/v1688808265/IMG-20230708-WA0012_locrpw.jpg " class="co-card__image">
+                            <p class="co-card-section__ends-with">Ending With 8899 </p>
+                        </div>
+                        <div class="co-card-section_card co-card-section_card--selected-card">
+                            <img src="https://res.cloudinary.com/dd3hnxui2/image/upload/v1688808164/IMG-20230708-WA0010_nvrkzc.jpg " class="co-card__image">
+                            <p class="co-card-section__ends-with">Ending With 8899</p>
+                        </div>
+                        <div class="co-card-section__card">
+                            <img src="https://res.cloudinary.com/dd3hnxui2/image/upload/v1688807959/IMG-20230708-WA0017_eqni8v.jpg " class="co-card__image">
+                            <p class="co-card-section__ends-with">Ending With 8899</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="co-wallet-newcard-section__new-section">
+                    <h1 class="co-wallet-section__heading">New Card</h1>
+                    <hr class="co-wallet-section__horizontal-line">
+                    <form class="co-new-section__user-card-details-form">
+                        <input class="co-user-card-details-form__name-on-card" placeholder="Name on Card">
+                        <input class="co-user-card-details-form__name-on-card" placeholder="XXXX-XXXX-XXXX-XXXX">
+                        <div class="co-user-card-details-form__MM-YY-on-card-section">
+                            <input class="co-user-card-details-form__MM-YY-on-card" placeholder="MM/YY">
+                            <input class="co-user-card-details-form__MM-YY-on-card" placeholder="CVV">
+                        </div>
+                        <button class="co-user-card-details-form__continue-button">CONTINUE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="co-subsection__products-section">
+                <div class="co-products-section__product-section">
+                    <div class="co-product-section__product-card">
+                        <div class="co-product-card__img-description-wrapper">
+                            <img src="https://res.cloudinary.com/dnroew7f3/image/upload/v1688300044/1_eh77s0.jpg" class="co-product-card__image">
+                            <div class="co-product-card__product-description">
+                                <h1 class="co-product-description__product-heading ">Mobile Holder</h1>
+                                <p class="co-product-description__product-color">black</p>
+                                <p class="co-product-description__product-quantity">Quantity: 1</p>
+                            </div>
+                        </div>
+                        <p class="co-product-card__product-price">$ 10.00</p>
+                    </div>
+                    <div class="co-product-section__product-card">
+                        <div class="co-product-card__img-description-wrapper">
+                            <img src="https://res.cloudinary.com/dnroew7f3/image/upload/v1688300138/2_ffwrae.jpg" class="co-product-card__image">
+                            <div class="co-product-card__product-description">
+                                <h1 class="co-product-description__product-heading">Rado Watch</h1>
+                                <p class="co-product-description__product-color">black</p>
+                                <p class="co-product-description__product-quantity">Quantity: 1</p>
+                            </div>
+                        </div>
+                        <p class="co-product-card__product-price">$ 10.00</p>
+                    </div>
+                    <div class="co-product-section__product-card">
+                        <div class="co-product-card__img-description-wrapper">
+                            <img src="https://res.cloudinary.com/dnroew7f3/image/upload/v1688300353/AdobeStock_305031727_Preview_sm4vvt.jpg" class="co-product-card__image">
+                            <div class="co-product-card__product-description">
+                                <h1 class="co-product-description__product-heading">C type to Micro Converter</h1>
+                                <p class="co-product-description__product-color">black</p>
+                                <p class="co-product-description__product-quantity">Quantity: 1</p>
+                            </div>
+                        </div>
+                        <p class="co-product-card__product-price">$ 10.00</p>
+                    </div>
+                    <div class="co-product-section_product-card co-product-section_product-card--mobile-case">
+                        <div class="co-product-card__img-description-wrapper">
+                            <img src="https://res.cloudinary.com/dnroew7f3/image/upload/v1688300346/4_tpgll6.jpg" class="co-product-card__image">
+                            <div class="co-product-card__product-description">
+                                <h1 class="co-product-description__product-heading">Mobile Case </h1>
+                                <p class="co-product-description__product-color">black</p>
+                                <p class="co-product-description__product-quantity">Quantity: 1</p>
+                            </div>
+                        </div>
+                        <p class="co-product-card__product-price">$ 10.00</p>
+                    </div>
+                </div>
+
+                <div class="co-bill-section__sub-total-section">
+                    <div class="co-sub-total-section__price-wrapper">
+                        <p class="co-sub-total-section__heading">Sub Total</p>
+                        <p class="co-sub-total-section__subtotal-price">$ 100.00</p>
+                    </div>
+                    <div class="co-sub-total-section__price-wrapper">
+                        <p class="co-sub-total-section__heading">Shipping</p>
+                        <p class="co-sub-total-section__subtotal-price">$ 10.00</p>
+                    </div>
+                    <div class="co-sub-total-section__price-wrapper">
+                        <p class="co-sub-total-section__heading">Taxes</p>
+                        <p class="co-sub-total-section__subtotal-price">$ 5.00</p>
+                    </div>
+                </div>
+                <div class="co-total-section__price-wrapper">
+                    <p class="co-total-section__heading">Total</p>
+                    <p class="co-total-section__subtotal-price">$ 115.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
