@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.co-bg-container {
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 4px grey;
+    margin: 20px;
+}
+
+body {
+    background-image: url('https://res.cloudinary.com/dd3hnxui2/image/upload/v1688808206/IMG-20230708-WA0011_kxggej.jpg');
+    background-size: cover;
+}
+
+.co-nav-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 10px;
+}
+
+.co-nav-bar__heading {
+    font-size: 20px;
+}
+
+.co-nav-bar__unordered-list {
+    display: flex;
+    margin-left: 120px;
+}
+
+.co-nav-bar__breadcrumb-item::after {
+    content: "/";
+    margin: 0 5px;
+}
+
+.co-nav-bar__navlink {
+    text-decoration: none;
+    color: black;
+}
+
+.co-nav-bar__item {
+    list-style-type: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+}
+
+.co-nav-bar__item--payment-method {
+    font-weight: 600;
+}
+
+.co-nav-bar__x-mark-icon {
+    font-size: 27px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/*--------------------- Sub Section ----------------------------*/
+
+.co-bg-container__co-subsection {
+    display: flex;
+    background-color: #ffffff;
+}
+
+.co-subsection__wallet-newcard-section {
+    width: 60%;
+}
+
+/*--------------------- Wallet Section ----------------------------*/
+
+.co-wallet-newcard-section__wallet-section {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.co-wallet-section__heading {
+    font-size: 20px;
+    color: #A9A9A9;
+}
+
+.co-wallet-section__horizontal-line {
+    height: 4px;
+    width: 100%;
+    background-color: #E8E8E8;
+}
+
+.co-wallet-section__card-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.co-card-section__card {
+    margin: 20px;
+}
+
+.co-card-section__card--selected-card {
+    background-color: #F0F0F0;
+    padding: 15px;
+}
+
+.co-card__image {
+    height: 80%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/*--------------------- New Card Section ----------------------------*/
+
+.co-wallet-newcard-section__new-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.co-card-section__ends-with {
+    color: #787878;
+}
+
+.co-new-section__user-card-details-form {
+    margin-top: 20px;
+    align-self: center;
+}
+
+.co-user-card-details-form__name-on-card {
+    display: block;
+    height: 30px;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid #E8E8E8;
+    border-radius: 8px;
+}
+
+.co-user-card-details-form__MM-YY-on-card-section {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.co-user-card-details-form__MM-YY-on-card {
+    flex-grow: 1;
+    height: 30px;
+    padding: 10px;
+    margin-right: 1px;
+    margin-bottom: 10px;
+    border: solid #E8E8E8;
+    border-radius: 8px;
+}
+
+.co-user-card-details-form__continue-button {
+    height: 45px;
+    width: 350px;
+    display: block;
+    background-color: #20d90f;
+    color: #ffffff;
+    border-style: none;
+    margin-top: 25px;
+}
+
+/*--------------------- Product Bill Section ----------------------------*/
+
+
+.co-subsection__products-section {
+    background-color: #F5F5F5;
+    width: 40%;
+    padding: 15px;
+}
+
+.co-product-section__product-card {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E8E8E8;
+    padding: 10px;
+}
+
+.co-product-card__img-description-wrapper {
+    display: flex;
+}
+
+.co-product-card__image {
+    height: 100px;
+    width: 100px;
+    border: 10px solid #E0E0E0;
+}
+
+.co-product-card__product-description {
+    margin-left: 15px;
+}
+
+.co-product-card__product-price {
+    color: #909090;
+    text-align: right;
+    align-self: center;
+    font-weight: bold;
+}
+
+.co-product-description__product-heading {
+    font-weight: bold;
+    font-size: 22px;
+    color: #404040;
+}
+
+.co-product-description__product-color {
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.co-product-description__product-quantity {
+    padding-top: 2px;
+    font-weight: 600;
+    color: #787878;
+}
+
+.co-product-card__product-price {
+    font-weight: 900;
+    color: #787878;
+}
+
+.co-product-section__product-card--mobile-case {
+    border-bottom-style: none;
+}
+
+/*--------------------- Bill Section ----------------------------*/
+
+.co-products-section__bill-section {
+    padding: 10px;
+}
+
+.co-bill-section__sub-total-section {
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    margin-top: 110px;
+}
+
+.co-sub-total-section__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.co-sub-total-section__heading {
+    color: #909090;
+    font-weight: 600;
+}
+
+.co-sub-total-section__subtotal-price {
+    color: #909090;
+    font-weight: bold;
+}
+
+.co-total-section__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.co-total-section__heading {
+    font-weight: bold;
+}
+
+.co-total-section__subtotal-price {
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .co-bg-container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .co-subsection__wallet-newcard-section {
+        width: 60%;
+    }
+
+    .co-subsection__products-section {
+        width: 40%;
+    }
+
+    .co-user-card-details-form__continue-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .co-bg-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*--------------------- Sub Section Wallet New Card Section ----------------------------*/
+
+    .co-subsection__wallet-newcard-section {
+        width: 50%;
+    }
+
+    /*--------------------- New Section Form Section ----------------------------*/
+
+    .co-new-section__user-card-details-form {
+        width: 100%;
+        align-self: center;
+    }
+
+    .co-user-card-details-form__name-on-card {
+        width: 90%;
+    }
+
+    .co-user-card-details-form__MM-YY-on-card-section {
+        width: 96.5%;
+    }
+
+    .co-user-card-details-form__MM-YY-on-card {
+        width: 100%;
+    }
+
+    .co-user-card-details-form__continue-button {
+        width: 100%;
+    }
+
+    .co-subsection__products-section {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 599px) {
+    .co-bg-container {
+        max-width: 100%;
+    }
+
+    .co-bg-container__co-subsection {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /*--------------------- Sub Section Wallet New Card Section ----------------------------*/
+
+    .co-subsection__wallet-newcard-section {
+        width: 100%;
+    }
+
+    /*--------------------- New Section Form Section ----------------------------*/
+
+    .co-new-section__user-card-details-form {
+        width: 100%;
+        align-self: center;
+    }
+
+    .co-user-card-details-form__name-on-card {
+        width: 90%;
+    }
+
+    .co-user-card-details-form__MM-YY-on-card-section {
+        width: 96.5%;
+    }
+
+    .co-user-card-details-form__MM-YY-on-card {
+        width: 100%;
+    }
+
+    .co-user-card-details-form__continue-button {
+        width: 100%;
+    }
+
+    /*--------------------- Product Section ----------------------------*/
+
+    .co-subsection__products-section {
+        width: 91.5%;
+    }
+
+    .co-subsection__products-section {
+        width: 100%;
+        order: -1;
+    }
+
+    .co-products-section__product-section {
+        width: 100%;
+    }
+
+    .co-product-section__product-card {
+        width: 100%;
+    }
+
+    .co-product-card__image {
+        height: 70%;
+        width: 20%;
+    }
+
+    .co-product-description__product-heading {
+        font-size: 12px;
+    }
+
+    .co-product-description__product-color {
+        font-size: 10px;
+    }
+
+    .co-product-description__product-quantity {
+        font-size: 12px;
+    }
+
+    .co-product-card__product-price {
+        font-size: 12px;
+    }
+
+    /*--------------------- bill Sub Total Section ----------------------------*/
+
+    .co-bill-section__sub-total-section {
+        width: 100%;
+    }
+
+    .co-total-section__price-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 399px) {
+    .co-bg-container__co-subsection {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .co-subsection__wallet-newcard-section {
+        width: 100%;
+    }
+
+    /*--------------------- Wallet Section ----------------------------*/
+
+    .co-wallet-section__card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*--------------------- New Card Section ----------------------------*/
+
+    .co-new-section__user-card-details-form {
+        width: 100%;
+        align-self: center;
+    }
+
+    .co-user-card-details-form__name-on-card {
+        width: 90%;
+    }
+
+    .co-user-card-details-form__MM-YY-on-card-section {
+        width: 100%;
+    }
+
+    .co-user-card-details-form__MM-YY-on-card {
+        width: 100%;
+    }
+
+    .co-user-card-details-form__continue-button {
+        width: 100%;
+    }
+
+    /*--------------------- Product Section ----------------------------*/
+
+    .co-subsection__products-section {
+        width: 100%;
+        order: -1;
+        flex-grow: 1;
+    }
+
+    .co-products-section__product-section {
+        width: 100%;
+    }
+
+    .co-product-card__image {
+        height: 60%;
+        width: 15%;
+    }
+
+    .co-product-description__product-heading {
+        font-size: 8px;
+    }
+
+    .co-product-description__product-color {
+        font-size: 8px;
+    }
+
+    .co-product-description__product-quantity {
+        font-size: 8px;
+    }
+
+    .co-product-card__product-price {
+        font-size: 8px;
+    }
+
+    /*--------------------- Bill Sub Total Section ----------------------------*/
+
+    .co-bill-section__sub-total-section {
+        width: 100%;
+    }
+
+    /*--------------------- Bill Total Section ----------------------------*/
+
+    .co-total-section__price-wrapper {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .co-nav-bar__unordered-list {
+        display: none;
+    }
+}
