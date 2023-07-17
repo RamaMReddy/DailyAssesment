@@ -1,25 +1,24 @@
-<html>
-
-<head>
-    <script src="https://kit.fontawesome.com/b62e6ddcd0.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <div class="bg-container">
-        <nav class="nav-bar">
-            <h1 class="nav-bar__heading">Checkout</h1>
-            <ul class="nav-bar__unordered-list">
-                <li class="nav-bar_breadcrumb-item nav-bar_item"><a href="#">Shipping</a></li>
-                <li class="nav-bar_breadcrumb-item nav-baritem nav-bar_item--payment-method"><a href="#">Payment Method</a></li>
-                <li class="nav-bar_breadcrumb-item nav-bar_item">Confirmation</li>
-            </ul>
-            <i class="fa-solid fa-square-xmark nav-bar__x-mark-icon"></i>
-        </nav>
-        <div class="bg-container__span-wrapper">
-            <span class="span-wrapper__primary-title">Payment Block</span>
-            <span class="span-wrapper__secondary-title">Cart Block</span>
+<!DOCTYPE html>
+    <head>
+       <title>Payment</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    </head>
+    <body>
+       <div class="main">
+        <nav>
+            <ul>
+                <li><b>Checkout</b></li>
+                <li id="Shipping">Shipping /</li>
+                <li><b>Payment Method</b> /</li>
+                <li>Confirmation</li>
+                <li id="close"><i class="fa fa-window-close"></i></li>
+             </ul>
+         </nav>
+        <div class="payment-block">
+            <p id="pb">Payment Block</p>
+            <p id="cb">Cart Block</p>
         </div>
-    </div>
-</body>
-
+        </div>
+    </body>
 </html>
