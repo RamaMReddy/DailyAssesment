@@ -1,0 +1,187 @@
+.container {
+  display:flex;
+ position:fixed;
+  width: 1200px;
+  height: 550px;
+  border: 2px solid black;
+  padding: 10px;
+  padding-top:50px;
+  margin:20px;
+}
+.card {
+
+  width:150%;
+  padding: 20px;
+  border-radius:30px;
+}
+.newcard{
+  margin-left:-130px;;
+  }
+.submit{
+ background-color:green;
+ color:black;
+padding: 8px;
+  border: none;
+    cursor: pointer;
+  }
+
+.image-container img {
+
+  position:flex;
+  width: 110px;
+  height: 100px;
+  padding:20px;
+  border:1px solid black;
+}
+
+.half{
+  position:absolute;
+  width:400px;
+  height:620px;
+  border-right: 2px;
+}
+
+.half:last-child {
+  border-right: 2px;
+  position:absolute;
+  width:600px;
+  height:600px;
+}
+.containerx {
+  position: absolute;
+  
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  
+  margin-top:-45px;
+  right: 10px;
+}
+
+.x-mark {
+  position: absolute;
+  
+  top:3px;
+  left: 5px;
+  background-color:white;
+}
+.right{
+  position:fixed;
+  height:87%;
+  width:41%;
+  margin-left:700px;
+  margin-top:60px;
+  background-color:rgba(211, 211, 211, 0.925);
+}
+.mobile{
+  display:flex;
+  margin-top: 10px;
+  flex-direction:column;
+}
+
+#img1{
+  border:7px solid lightgrey;
+  margin-left:100px;
+  margin-top:30px;
+}
+#h1{
+  margin-top:20px;
+}
+#h2{
+  margin-top:30px;
+}
+#m1{
+  width:40%;
+  margin-left:40%;
+  margin-top:-60px;
+}
+#m2{
+  width:20px;
+  margin-left:40%;
+  margin-top:10px;
+}
+#m3{
+  width:30px;
+  margin-left:40%;
+  margin-top:-5px;
+}
+#m4{
+  
+  margin-left:40%;
+  margin-top:-40px;
+}
+#img2{
+  border:7px solid lightgrey;
+  margin-top:2px;
+  margin-left:100px;
+}
+#img3{
+  border:7px solid lightgrey;
+  margin-top:4px;
+  margin-left:100px;
+}
+#img4{
+  border:7px solid lightgrey;
+  margin-top:6px;
+  margin-left:100px;
+}
+#h3{
+  margin-top:45px;
+}
+#h4{
+  margin-top:30px;
+}
+.long{
+  display:flex;
+  flex-direction:column;
+  margin-left:100px;
+  font-size:18px;
+}
+.short{
+  flex-direction:column;
+  margin-left:85%;
+  margin-top:-120px;
+  font-size:18px;
+}
+#s2{
+  margin-left:8px;
+}
+#s3{
+  margin-left:15px;
+}
+#s4{
+  margin-right:40px; 
+}
+.long1{
+  margin-top:-10px;
+  flex-direction: column;
+  font-size:20px;
+  margin-left:100px;
+}
+.short1{
+  flex-direction:column;
+  margin-left:400px;
+  margin-top:-20px;
+  font-size:18px;
+}
+#s5{
+  margin-left:40px;
+
+}
+
+.card-info {
+  position: absolute;
+  width: 50px;
+  bottom: 100px;
+  left:150px
+}
+
+.card-info label {
+  display: block;
+  width:30px;
+  margin-bottom: 10px;
+}
+.card-info input {
+  width: 350px;
+  margin-bottom: 10px
+}
