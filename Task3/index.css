@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg{
+    background-image: url("https://res.cloudinary.com/divyas/image/upload/v1688483728/IMG-20230704-WA0018_xnrgg6.jpg");
+    background-size: cover;
+    padding: 30px;
+  }
+
+  .table {
+    display: table;
+    width: 100%;
+    background-color: #fffcfc;
+    margin-left: 0px;
+    margin-right: 40px;
+  }
+  
+  .row1 {
+    display: table-row;
+  }
+
+  .box1 {
+      display: table-cell;
+      padding: 10px;
+      width:93%;
+      border: 1px solid #ccc;
+      border-right-width: 0px;
+    }
+    .box2 {
+      display: table-cell;
+      border: 1px solid #ccc;
+      border-left-width: 0px;
+      padding: 10px;
+      width:5%;
+    }
+
+    @media (min-width: 600px) and (max-width: 750px) {
+      .table {
+          display: table;
+          width: 100%;
+          background-color: #fffcfc;
+          margin-left: 0px;
+          margin-right: 40px;
+        }
+        
+        .row {
+          display: table-row;
+        }
+        p{
+          font-size: 14px;
+        }
+        
+        .box1 {
+          display: none;
+          
+        }
+        .box11 {
+          display: table-cell;
+          padding: 10px;
+          width:93%;
+          border: 1px solid #ccc;
+          border-right-width: 0px;
+        }
+        
+        .box3 {
+          display: table-cell;
+          height:10%;
+          border: 1px solid #ccc;
+          padding: 10px;
+          width:59%;
+        }
+        .paycards{
+          margin: 5px;
+          border-width: 2px;
+          border-color: darkgrey;
+          display: flex;
+          flex-direction: row;
+          justify-content:start ;
+        }
+        .back{
+          background-color: rgb(231, 231, 231); 
+          border-radius: 1px; 
+          padding: 1px; 
+          padding-right: 1px; 
+          margin: 2px;
+        }
+        .discover{
+          
+          width:90%;
+          height: 55%;
+          border-radius: 10px;
+          margin-left: 2px;
+          margin-top: 10px;
+          padding:1px;
+          margin-right: 2px;
+        }
+        .cartitems{
+          display: table-cell;
+          display: flex;
+          flex-direction: column;
+          justify-content:start ;
+          background-color: #f7f7f7;
+        }
+        .item{
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          padding: 10px;
+        }
+        .iq{
+          padding-bottom:1px;
+          padding-right: 5%;
+          padding-left: 10px;
+        }
+      
+        .item1{
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          padding: 1px;
+        }
+        .iq1{
+          padding-bottom:1px;
+          padding-right: 1px;
+          padding-left: 5px;
+        }
+        .imgb{
+          border: 5px solid rgb(133, 133, 133);
+        }
+      }
+    
+
+
+@media only screen and (min-width: 750px) {
+  .table {
+      display: table;
+      width: 100%;
+      background-color: #fffcfc;
+      margin-left: 0px;
+      margin-right: 40px;
+    }
+    
+    .row {
+      display: table-row;
+    }
+    p{
+      font-size: 15px;
+    }
+    
+    .box1 {
+      display: table-cell;
+      padding: 10px;
+      width:93%;
+      border: 1px solid #ccc;
+      border-right-width: 0px;
+    }
+    .box11 {
+      display: none;
+    }
+    
+    .box3 {
+      display: table-cell;
+      height:10%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width:59%;
+    }
+    .paycards{
+      margin: 5px;
+      border-width: 2px;
+      border-color: darkgrey;
+      display: flex;
+      flex-direction: row;
+      justify-content:start ;
+    }
+
+    .back{
+      background-color: rgb(231, 231, 231); 
+      border-radius: 1px; 
+      padding: 3px; 
+      padding-right: 15px; 
+      margin: 5px;
+    }
+    .discover{
+      
+      width:95%;
+      height: 65%;
+      border-radius: 20px;
+      margin-left: 5px;
+      margin-top: 10px;
+      padding: 5px;
+      margin-right: 5px;
+    }
+    .cartitems{
+      display: table-cell;
+      display: flex;
+      flex-direction: column;
+      justify-content:start ;
+      background-color: #f7f7f7;
+    }
+    .item{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      padding: 10px;
+    }
+    .iq{
+      padding-bottom:1px;
+      padding-right: 30%;
+      padding-left: 10px;
+    }
+  
+    .item1{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      padding: 1px;
+    }
+    .iq1{
+      padding-bottom:1px;
+      padding-right: 70%;
+      padding-left: 5px;
+    }
+    .imgb{
+      border: 5px solid rgb(133, 133, 133);
+    }
+  }
+
+  @media only screen and (max-width: 350px){
+
+  .bg{
+      background-image: url("https://res.cloudinary.com/divyas/image/upload/v1688483728/IMG-20230704-WA0018_xnrgg6.jpg");
+      background-size: cover;
+      padding: 10px;
+    }
+  p{
+    font-size: 9px;
+  }
+  
+  .table {
+    display: table;
+    background-color: #fffcfc;
+    margin-left: 0px;
+    margin-right: 40px;
+  }
+  
+  .row{
+    display: table-column;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box1 {
+    display: none;
+  }
+  .box11 {
+    display: table-cell;
+    padding: 10px;
+    width:93%;
+    border: 1px solid #ccc;
+    border-right-width: 0px;
+  }
+  .back{
+    background-color: rgb(231, 231, 231); 
+    border-radius: 1px; 
+    padding: 3px; 
+    padding-right: 5px; 
+    margin: 25px;
+  }
+  
+  .box3 {
+    display: table-cell;
+    height:10%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width:96%;
+  }
+  .paycards{
+    width: 100%;
+    margin: 5px;
+    border-width: 2px;
+    border-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content:start ;
+  }
+  .discover{
+    
+    width:70%;
+    height: 50%;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+
+  .cartitems{
+    display: table-cell;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content:start ;
+    background-color: #f7f7f7;
+  }
+  .item{
+    display: flex;
+    width: 98%;
+    flex-direction: row;
+    justify-content: start;
+    padding: 10px;
+  }
+  .iq{
+    padding-bottom:1px;
+    padding-right: 30px;
+    padding-left: 10px;
+  }
+
+  .item1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 1px;
+  }
+  .iq1{
+    padding-bottom:1px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .imgb{
+    width: 18%;
+    height: 16%;
+    border: 5px solid rgb(133, 133, 133);
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px){
+
+  .bg{
+      background-image: url("https://res.cloudinary.com/divyas/image/upload/v1688483728/IMG-20230704-WA0018_xnrgg6.jpg");
+      background-size: cover;
+      padding: 17px;
+    }
+  
+  .table {
+    display: table;
+    background-color: #fffcfc;
+    margin-left: 0px;
+    margin-right: 40px;
+  }
+  p{
+    font-size: 9px;
+  }
+  
+  .row{
+    display: table-column;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box1 {
+    display: none;
+  }
+  .box11 {
+    display: table-cell;
+    padding: 10px;
+    width:93%;
+    border: 1px solid #ccc;
+    border-right-width: 0px;
+  }
+  .back{
+    background-color: rgb(231, 231, 231); 
+    border-radius: 1px; 
+    padding: 13px; 
+    padding-right: 15px; 
+    margin: 25px;
+  }
+  
+  .box3 {
+    display: table-cell;
+    height:10%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width:94%;
+  }
+  .paycards{
+    width: 100%;
+    margin: 5px;
+    border-width: 2px;
+    border-color: darkgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content:start ;
+  }
+  .back{
+    background-color: rgb(231, 231, 231); 
+    border-radius: 1px; 
+    padding: 1px; 
+    padding-right: 1px; 
+    margin: 2px;
+  }
+  .discover{
+    
+    width:90%;
+    height: 55%;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: 10px;
+    padding:1px;
+    margin-right: 2px;
+  }
+
+  .cartitems{
+    display: table-cell;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content:start ;
+    background-color: #f7f7f7;
+  }
+  .item{
+    display: flex;
+    width: 98%;
+    flex-direction: row;
+    justify-content: start;
+    padding: 10px;
+  }
+  .iq{
+    padding-bottom:1px;
+    padding-right: 32%;
+    padding-left: 10px;
+  }
+
+  .item1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 1px;
+  }
+  .iq1{
+    padding-bottom:1px;
+    padding-right: 70%;
+    padding-left: 5px;
+  }
+  .imgb{
+    width: 18%;
+    height: 16%;
+    border: 5px solid rgb(133, 133, 133);
+  }
+}
+
+
+ 
+
+    .cartitems{
+      display: table-cell;
+      display: flex;
+      flex-direction: column;
+      justify-content:start ;
+      background-color: #f7f7f7;
+    }
+    .item{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      padding: 10px;
+    }
+    .iq{
+      padding-bottom:1px;
+      padding-right: 40%;
+      padding-left: 10px;
+    }
+  
+    .item1{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      padding: 1px;
+    }
+    .iq1{
+      padding-bottom:1px;
+      padding-right: 70%;
+      padding-left: 5px;
+    }
+    .imgb{
+      border: 5px solid rgb(133, 133, 133);
+    }
