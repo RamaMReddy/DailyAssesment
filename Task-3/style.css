@@ -1,0 +1,346 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap'); */
+
+body{
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    /* background-size: fixed; */
+   
+}
+.main{
+    /* width: 1000px; */
+    margin:0;
+    padding:0;
+    border: 1px solid rgba(128, 128, 128, 0.67);
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.69);
+    /* position: fixed;
+    left: 15%;
+    top: 20%; */
+    background-color: white;
+}
+.payment-block{
+    width: 100%;
+    /* height: 470px; */
+    border-top: 1px solid rgba(128, 128, 128, 0.67);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+}
+ul{
+    width: 100%;
+    height: 25px;
+    /* text-align: center;
+    justify-content: center;
+    margin-top: 2px; */
+    list-style-type:none;
+    display:flex;
+    padding-left: 5px;
+    margin: 0;
+}
+ul li{
+    padding-left: 10px;  
+}
+#Shipping{
+    padding-left: 150px;
+}
+#close{
+     padding-left: 58%; 
+    padding-top: 3px;
+}
+#cb{
+    width: 40%;
+    background-color: rgba(128, 128, 128, 0.192);
+   margin: 0%;
+   padding-left: 3px;
+   padding-top: 5px;
+}
+#pb{
+    margin: 0;
+    width: 60%;
+    padding-left: 5px;
+}
+#cart-img{
+    width: 40px;
+    height: 40px;
+    /* padding: 5px; */
+    border: 1px solid  rgba(128, 128, 128, 0.192);
+    background-color:  rgba(128, 128, 128, 0.684);
+    padding: 5px 5px 5px 5px;
+    margin: 0%;
+}
+
+p{
+    margin: 0%;
+    padding-top: 2px;
+    font-size: 10px;
+}
+hr{
+    margin-top: 30px;
+}
+#list-ttl{
+   font-size: 14px;
+    display: flex;
+}
+ol{
+    list-style-type: none;
+    padding-left: 0%;
+}
+#subprc{
+    padding-left: 240px;
+}
+#tp{
+    padding-left: 270px;
+    
+}
+#ttl{
+    margin-top: 100px;
+    font-size: 15px
+}
+ol li{
+    padding-top: 2px;
+}
+#hr{
+   margin-top: 35px;
+}
+#cart{
+    font-size: 12px;
+}
+#col{
+    padding-top: 5px;
+}
+#images1{
+    height: 120px;
+    width: 300px;
+    /* background-image: url("images/cards/discover.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: contain; */
+    margin: 20px;
+}
+#images2{
+    height: 120px;
+    width: 310px;
+    /* background-image: url("images/cards/master-card.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;  */
+    margin: 20px;
+    border: 1px solid gray;
+    background-color: rgba(128, 128, 128, 0.529);
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    /* margin-bottom: 0%;
+    padding-bottom:0% ;
+    padding: 2px; */
+   
+}
+#images3{
+    height: 120px;
+    width: 300px;
+   /* background-image: url("images/cards/visa.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; */
+    margin: 20px;
+    /* margin-left: 50px; */
+}
+.carts{
+    height: 80px;
+    width: 98%;
+    border-top: 2px solid  rgba(128, 128, 128, 0.684);
+    margin-left: 2px;
+    display: flex;
+   padding-left: 10px;
+    
+}
+#wallet{
+    font-size: 15px;
+    padding-left: 5px;
+    padding-top: 30px;
+}
+#wallet1{
+    font-size: 15px;
+    padding-left: 5px;
+    padding-top: 110px;
+}
+/* #select{
+    height: 160px;
+    width: 300px;
+    border: 1px solid grey;
+    margin-top:10px ;
+    margin-left: 30px;
+    background-color: rgba(128, 128, 128, 0.192);
+} */
+
+.num{
+    list-style-type: none;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.newcard{
+    border-top: 2px solid  rgba(128, 128, 128, 0.684);
+    padding-left: 25%;
+    /* padding-top: 10px; */
+  
+    
+}
+input[type="text"],[type="number"]{
+    width: 50%;
+    height: 28px;
+   margin-top: 10px;
+   border-top: 2px solid  rgba(128, 128, 128, 0.684);
+   border-radius: 3px;
+}
+input[type="datetime"]{
+    width: 24%;
+    height: 28px;
+    margin-top: 10px;
+    border-top: 2px solid  rgba(128, 128, 128, 0.684);
+    border-radius: 3px;
+}
+#cvv{
+    width: 24%;
+    height: 28px;
+    border-top: 2px solid  rgba(128, 128, 128, 0.684);
+    border-radius: 3px;
+}
+#btn{
+    width: 50%;
+    height: 33px;
+    margin-top: 20px;
+    border-top: 2px solid  rgba(128, 128, 128, 0.684);
+    border-radius: 3px;
+    background-color: rgb(17, 179, 63);
+    color: white;
+}
+
+
+
+
+@media screen and (min-width:992px) {
+   .main{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+   }
+   #pb{
+    width: 60%;
+   }
+   #cb{
+    width: 40%;
+   }
+   #price1{
+    padding-left: 320px;
+    /* padding-right: 100px; */
+ }
+ #price2{
+     padding-left: 330px;
+  }
+  #price3{
+     padding-left: 305px;
+  }
+  #price4{
+     padding-left: 325px;
+  }
+  #subprc{
+    padding-left: 380px;
+}
+#tp{
+    padding-left: 410px;
+    
+}
+}
+
+@media screen and (max-width:992px) {
+    .main{
+     margin-left: 20px;
+     margin-right: 20px;
+    }
+  
+ }
+
+ @media screen and (min-width:768px)and (max-width:992px) {
+    #pb{
+        width: 50%;
+       }
+       #cb{
+        width: 50%;
+       }
+    #close{
+        padding-left: 310px;
+    }
+ }
+
+ @media screen and (max-width:600px) {
+    .payment-block{
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    #pb{
+        width: 100%;
+        background-color: white;
+        padding-left: 0px;
+        margin-left: 0%;
+        position: relative;
+        top: 450px;
+    
+    }
+    #cb{
+        width: 100%;
+        position: relative;
+        /* top: -850px; */
+        top: -440px;
+       
+    }
+  
+ }
+
+ @media screen and (max-width:400px){
+       #images1,#images2,#images3{
+         width: 100%;
+         height: 150px;
+         padding: 0%;
+         margin: 0%;
+         margin-top: 20px;
+       }
+    .carts{
+        display: block;
+        height: 200px;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    #wallet1{
+        padding-top: 400px;
+    }
+    #images2{
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+   #cb{
+     position: relative;
+     top: -850px;
+   }
+  
+       
+ }
+
+
+
+  
+
+  @media only screen and (max-width: 768px) {
+    #mode_vis,#mode_vis1,#Shipping{
+        visibility: hidden;
+    }
+    #close{
+       padding-left: 150px;
+    }
+    #subprc{
+        padding-left: 150px;
+    }
+  } 
+
+  
