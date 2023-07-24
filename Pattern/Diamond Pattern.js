@@ -1,3 +1,4 @@
+console.log("diamond pattern");
 function diamond_pattern(num){
     // var row ="";
     let space=Math.floor(num/2);
