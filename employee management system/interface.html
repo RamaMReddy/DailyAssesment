@@ -76,10 +76,7 @@ demoDetails:function(){
 
   // Method to get employee details by ID
   getEmployeeDetails: function () {
-    //   const employee2 = new Employee(20, "Ashok", "packing", "Degree", 50000);
-    // this.employees.push(employee2);
-    //   const employee1 = new Employee(22, "Lahari", "Quality", "B.Tch", 100000);
-    // this.employees.push(employee1);
+   
     const id_search = parseInt(prompt("Enter employee ID:"));
 
     const employee = this.employees.find((emp) => emp.id === id_search);
@@ -125,17 +122,10 @@ demoDetails:function(){
     }else{
         employee.salary = salary;
     }
-    //   employee.name = name;
-    //   employee.department = department;
-    //   employee.designation = designation;
-    //   employee.salary = salary;
+   
       console.log("Employee details updated successfully!");
       console.log("Employee Details After Update:");
-    //   console.log("ID:", employee.id);
-    //   console.log("Name:", employee.name);
-    //   console.log("Department:", employee.department);
-    //   console.log("Designation:", employee.designation);
-    //   console.log("Salary:", employee.salary);
+  
     console.log(manager.employees);
     } else {
       console.log("Employee not found.");
@@ -156,10 +146,7 @@ demoDetails:function(){
 
   // Method to list all employees
   listAllEmployees: function () {
-    // const employee2 = new Employee(20, "Ashok", "packing", "Degree", 50000);
-    // this.employees.push(employee2);
-    //   const employee1 = new Employee(22, "Lahari", "Quality", "B.Tch", 100000);
-    // this.employees.push(employee1);
+  
     if (this.employees.length === 0) {
       console.log("No employees found.");
     } else {
