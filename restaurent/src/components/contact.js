@@ -21,7 +21,7 @@ function Contact() {
           
           
        }}>
-             <Typography variant='h1' position={'absolute'} top={'7%'} left={'35%'}><p>Food Court</p></Typography>
+             <Typography variant='h1' position={'absolute'} top={'7%'} left={'35%'}><p>Contact Us</p></Typography>
         </Box>
        <Box maxWidth={800} textAlign={'center'} 
          alignItems={'center'} 
@@ -36,7 +36,7 @@ function Contact() {
         display={'flex'}
     >
         <Box>
-         <Typography variant='h4' textAlign={'center'}>Contact Us</Typography><br></br><br></br>
+        
          <Typography variant='h5'> <FmdGoodIcon/> Address</Typography>
            <Box>
               <Typography color={'GrayText'}>Kurnool Branch</Typography>

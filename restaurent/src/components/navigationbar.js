@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import {Typography,AppBar,Toolbar, Box, IconButton, Drawer, Button} from "@mui/material";
+import {Typography,AppBar,Toolbar, Box, IconButton, Drawer, Button,Avatar} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
-import { Link } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 import './navigationbar.css';
-import { orange } from '@mui/material/colors';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 
@@ -24,10 +24,10 @@ const drawer = (
       </Box>
      
         <ul className='nav-menu-mob'>
-               <li><Link to='/'>Home</Link></li>
-               <li><Link to='/menu'>Menu</Link></li>
-               <li><Link to='/about'>About</Link></li>
-               <li><Link to='/contact'>Contact</Link></li>
+               <li><NavLink to='/'>Home</NavLink></li>
+               <li><NavLink to='/menu'>Menu</NavLink></li>
+               <li><NavLink to='/about'>About</NavLink></li>
+               <li><NavLink to='/contact'>Contact</NavLink></li>
                </ul>
               
      </Box>
@@ -41,19 +41,21 @@ const drawer = (
             <IconButton color='inherit' aria-label='open drawer' edge='start' sx={{display:{sm:'none'}}} onClick={drawertoggle}>
               <MenuIcon/>
             </IconButton>
-               <StorefrontTwoToneIcon/>
-               <Typography variant='h6' sx={{flexGrow:1}}>Food Court</Typography>
+            <Avatar variant='square' alt="Logo" src="logo.png" />
+               {/* <StorefrontTwoToneIcon/> */}
+               <Typography variant='h6' sx={{flexGrow:1}}><b><p style={{fontSize:'20px'}}>Food Court</p></b></Typography>
                {/* <Link to="/">Home</Link>
                <Link to="/menu">Menu</Link> */}
                <Box sx={{display:{xs:'none',sm:'block'}}}>
                <ul className='nav-menu'>
-               <li><Link to='/'>Home</Link></li>
-               <li><Link to='/menu'>Menu</Link></li>
-               <li><Link to='/about'>About</Link></li>
-               <li><Link to='/contact'>Contact</Link></li>
+               <li><NavLink to='/'>Home</NavLink></li>
+               <li><NavLink to='/menu'>Menu</NavLink></li>
+               <li><NavLink to='/about'>About</NavLink></li>
+               <li><NavLink to='/contact'>Contact</NavLink></li>
                </ul>
                </Box>
-               <Link to='/login'> <Button variant='contained'>Login/Signup</Button></Link>
+               <NavLink to=''> <Button variant='contained' color='error' sx={{borderRadius:'50px',marginRight:'10px'}}><ShoppingCartIcon/></Button></NavLink>
+               <NavLink to='/login'> <Button variant='contained'>Login/Signup</Button></NavLink>
               
            </Toolbar>
           

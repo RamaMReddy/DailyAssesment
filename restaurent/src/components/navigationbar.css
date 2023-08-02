@@ -10,16 +10,17 @@
 }
 
 .nav-menu li{
-    margin: 0 20px;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
 .nav-menu li a{
     text-decoration: none;
     color: white;
 }
-.nav-menu li a:hover{
-    text-decoration: none;
-    color: orange;
+.nav-menu li :hover{
+  
+    color: grey;
 }
 .cont-list{
     list-style-type:none;
@@ -43,9 +44,17 @@
     padding: 0%;
     margin-left: 100px;
 }
+.nav-menu-foot li:hover{
+    color: gray;
+}
+.nav-menu-foot li{
+    margin-top: 10px;
+}
 .nav-menu-foot li a{
     text-decoration: none;
+   font-weight: bold;
     color: white;
+   
 }
 
 .cont-list-foot{
@@ -83,6 +92,18 @@
     margin-top: 30px;
 }
 .nav-menu-mob li :hover{
+    color: gray;
+
+}
+.nav-menu li .active{
+  
+    color: orange;
+}
+.nav-menu-mob li .active{
+    color: orange;
+
+}
+.nav-menu-foot li .active{
     color: orange;
 
 }

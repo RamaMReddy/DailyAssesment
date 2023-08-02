@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Button, Typography } from '@mui/material'
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+import { Link } from 'react-router-dom';
 import './navigationbar.css'
 
 
@@ -18,13 +19,13 @@ function Welcome() {
       <Box paddingTop={20} paddingLeft={5} textAlign={'center'} sx={{display:{xs:'block',sm:'none'}}} >
       <Typography variant='h2' color={'white'}>Welcome to <q><b>Foot Court</b></q></Typography>
       <Typography variant='h6' color={'white'}>The Native place of Healthy and Tasty Food</Typography>
-      <Button variant='contained' color='warning' endIcon={<DeliveryDiningIcon/>}> Order Now</Button>
+      <Link to='/menu' ><Button variant='contained' color='warning' endIcon={<DeliveryDiningIcon/>}> Order Now</Button> </Link>
       </Box>
 
       <Box paddingTop={40} paddingLeft={5} textAlign={'center'} sx={{display:{xs:'none',sm:'block'}}} >
       <Typography variant='h2' color={'white'}>Welcome to <q><b>Foot Court</b></q></Typography>
       <Typography variant='h6' color={'white'}>The Native place of Healthy and Tasty Food</Typography>
-      <Button variant='contained' color='warning' endIcon={<DeliveryDiningIcon/>}> Order Now</Button>
+      <Link to='/menu' ><Button variant='contained' color='warning' endIcon={<DeliveryDiningIcon/>}> Order Now</Button> </Link>
       </Box>
       </Box>
     </div>
