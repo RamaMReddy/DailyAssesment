@@ -9,6 +9,7 @@ function Authen(){
         name : "",
         email : "",
         password : "",
+        mobile : "",
     });
     const handleChange = (e) => {
         SetInput((prevStaten) => ({
@@ -25,7 +26,7 @@ function Authen(){
     };
     const resetState =() =>{
         SetIsLogin(!isLogin);
-        SetInput({name:"",email:"",password:""})
+        SetInput({name:"",email:"",password:"",mobile:"",})
     }
   return (
     <div>
@@ -49,6 +50,13 @@ function Authen(){
            )}
            <TextField type='email' placeholder='Email' name='email' onChange={handleChange} value={input.email} sx={{marginTop:2} }></TextField>
            <TextField type='password' placeholder='Password' name='password' onChange={handleChange} value={input.password} sx={{marginTop:2} }></TextField>
+           {isLogin &&(
+            <TextField type='number' placeholder='Mobile' name='mobile' onChange={handleChange} value={input.mobile} sx={{marginTop:2} }></TextField>
+
+           )
+
+           }
+           
            <Button
             endIcon={!isLogin ? <LoginIcon/>: <HowToRegIcon/>}
            variant='contained' color='warning' type='submit'
