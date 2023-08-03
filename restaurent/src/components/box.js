@@ -17,7 +17,7 @@ function Welcome() {
         backdropFilter:"blur",
         }}>
       <Box paddingTop={20} paddingLeft={5} textAlign={'center'} sx={{display:{xs:'block',sm:'none'}}} >
-      <Typography variant='h2' color={'white'}>Welcome to <q><b>Foot Court</b></q></Typography>
+      <Typography variant='h2' color={'white'}>Welcome to <q><b>Food Court</b></q></Typography>
       <Typography variant='h6' color={'white'}>The Native place of Healthy and Tasty Food</Typography>
       <Link to='/menu' ><Button variant='contained' color='warning' endIcon={<DeliveryDiningIcon/>}> Order Now</Button> </Link>
       </Box>
