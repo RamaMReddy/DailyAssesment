@@ -8,6 +8,11 @@ import './navigationbar.css'
 
 
 function Menulist() {
+    const addItem=()=>{
+        console.log(menu.map(imageob=>
+             console.log(imageob.title)
+            ));
+    }
   return (
     <div>
         <Navigation/>
@@ -25,8 +30,8 @@ function Menulist() {
             {menu.map(imageobj => 
                 <ImageListItem key={imageobj.id}>
                     <img src={imageobj.img} alt={imageobj.title}></img>
-                    <Typography variant='h5' sx={{backgroundColor:'orange'}} textAlign={'center'}>{imageobj.title}</Typography>
-                    <Button variant='contained' color='success'>Add Item</Button>
+                    <Typography variant='h5' sx={{backgroundColor:'orange'}} textAlign={'center'}>{imageobj.title}-Rs.{imageobj.price}</Typography>
+                    <Button variant='contained' color='success' onClick={addItem} key={imageobj.id}>Add Item</Button>
                 </ImageListItem>   
                 )}
           </ImageList>
