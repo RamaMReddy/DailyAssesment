@@ -1,0 +1,134 @@
+// Employee constructor
+function Employee(id, name, department, designation, salary) {
+    this.id = id;
+    this.name = name;
+    this.department = department;
+    this.designation = designation;
+    this.salary = salary;
+
+}
+
+// Manager object for managing employees
+const manager = {
+    employees: [
+
+    ],
+    demoDetails: function() {
+        const employee2 = new Employee(20, "Buddy", "packing", "Degree", 50000);
+        this.employees.push(employee2);
+        const employee1 = new Employee(22, "chitti", "Quality", "B.Tch", 100000);
+        this.employees.push(employee1);
+    },
+
+    // Method to add a new employee
+    addEmployee: function() {
+        const id = parseInt(prompt("Enter employee ID:"));
+        const validation = this.employees.find((emp) => emp.id === id);
+        if (validation) {
+            alert("Given id number already registered.Try another one");
+        } //else if(id=NaN){
+        //     alert("Enter a valid id");
+        // }
+        else {
+            const name = prompt("Enter employee name:");
+            const department = prompt("Enter employee department:");
+            const designation = prompt("Enter employee designation:");
+            const salary = parseFloat(prompt("Enter employee salary:"));
+            const employee = new Employee(id, name, department, designation, salary);
+            this.employees.push(employee);
+
+            console.log(manager.employees);
+            console.log("Employee added successfully!");
+        }
+
+    },
+
+
+    // Method to get employee details by ID
+    getEmployeeDetails: function() {
+
+        const id_search = parseInt(prompt("Enter employee ID:"));
+
+        const employee = this.employees.find((emp) => emp.id === id_search);
+        if (employee) {
+            console.log("Employee Details:");
+            console.log("ID:", employee.id);
+            console.log("Name:", employee.name);
+            console.log("Department:", employee.department);
+            console.log("Designation:", employee.designation);
+            console.log("Salary:", employee.salary);
+        } else {
+            console.log("Employee not found.");
+        }
+    },
+
+    // Method to update employee details by ID
+    updateEmployeeDetails: function() {
+        const id_update = parseInt(prompt("Enter employee ID:"));
+        const employee = this.employees.find((emp) => emp.id === id_update);
+        if (employee) {
+            //   console.log("Updating employee details for ID:", id);
+            const name = prompt("Enter updated employee name:");
+            const department = prompt("Enter updated employee department:");
+            const designation = prompt("Enter updated employee designation:");
+            const salary = parseFloat(prompt("Enter updated employee salary:"));
+            if (name === '') {
+                employee.name = employee.name
+            } else {
+                employee.name = name;
+            }
+            if (department === '') {
+                employee.department = employee.department
+            } else {
+                employee.department = department;
+            }
+            if (designation === '') {
+                employee.designation = employee.designation
+            } else {
+                employee.designation = designation;
+            }
+            if (salary == NaN) {
+                employee.salary = employee.salary
+            } else {
+                employee.salary = salary;
+            }
+
+            console.log("Employee details updated successfully!");
+            console.log("Employee Details After Update:");
+
+            console.log(manager.employees);
+        } else {
+            console.log("Employee not found.");
+        }
+    },
+
+    // Method to delete an employee by ID
+    deleteEmployee: function() {
+        const id_delete = parseInt(prompt("Enter employee ID:"));
+        const index = this.employees.findIndex((emp) => emp.id === id_delete);
+        if (index !== -1) {
+            this.employees.splice(index, 1);
+            console.log("Employee deleted successfully!");
+        } else {
+            console.log("Employee not found.");
+        }
+    },
+
+    // Method to list all employees
+    listAllEmployees: function() {
+
+        if (this.employees.length === 0) {
+            console.log("No employees found.");
+        } else {
+            console.log("Employee List:");
+            this.employees.forEach((emp) => {
+                console.log("ID:", emp.id);
+                console.log("Name:", emp.name);
+                console.log("Department:", emp.department);
+                console.log("Designation:", emp.designation);
+                console.log("Salary:", emp.salary);
+                console.log("-------------------");
+            });
+        }
+    },
+};
