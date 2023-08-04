@@ -13,6 +13,7 @@ function Authen(){
     });
     const handleChange = (e) => {
         SetInput((prevStaten) => ({
+          
             ...prevStaten,
             [e.target.name] : e.target.value
         })
@@ -21,11 +22,22 @@ function Authen(){
     };
     const handleSubmit = (e) =>{
         e.preventDefault();
-        console.log(!isLogin ? "Login Event" : "SignUp Event");
-        console.log(input);
+   
+        if (input.email==="") {
+            alert('please enter your registered email')
+          }
+          else if (input.password==="") {
+           alert('please enter your Password')
+          }
+          else{
+           console.log(input)
+          }  
+      
+       
     };
     const resetState =() =>{
         SetIsLogin(!isLogin);
+
         SetInput({name:"",email:"",password:"",mobile:"",})
     }
   return (
