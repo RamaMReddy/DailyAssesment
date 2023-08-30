@@ -8,8 +8,15 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 
+
 function Navigation() {
 
+  
+
+//  const token = localStorage.getItem('token')
+// console.log('token in nav:',token)
+// const cookie = document.cookie;
+// console.log('cookie',cookie)
   const [mobileopen , Setmobile] = useState(false);
 
 const drawertoggle = () =>{
@@ -25,7 +32,7 @@ const drawer = (
      
         <ul className='nav-menu-mob'>
                <li><NavLink to='/'>Home</NavLink></li>
-               <li><NavLink to='/menu'>Menu</NavLink></li>
+               <li><NavLink to='/restaurents'>Restaurents</NavLink></li>
                <li><NavLink to='/about'>About</NavLink></li>
                <li><NavLink to='/contact'>Contact</NavLink></li>
                </ul>
@@ -49,19 +56,22 @@ const drawer = (
                <Box sx={{display:{xs:'none',sm:'block'}}}>
                <ul className='nav-menu'>
                <li><NavLink to='/'>Home</NavLink></li>
-               <li><NavLink to='/menu'>Menu</NavLink></li>
+               <li><NavLink to='/restaurents'>Restaurents</NavLink></li>
                <li><NavLink to='/about'>About</NavLink></li>
                <li><NavLink to='/contact'>Contact</NavLink></li>
                </ul>
                </Box>
-               <NavLink to=''> <Button variant='contained' color='error' sx={{borderRadius:'50px',marginRight:'10px'}}><ShoppingCartIcon/></Button></NavLink>
-               <NavLink to='/login'> <Button variant='contained'>Login/Signup</Button></NavLink>
+               <NavLink to='/cart'> <Button variant='contained' color='error' sx={{borderRadius:'50px',marginRight:'10px'}}><ShoppingCartIcon/></Button></NavLink>
+               {document.cookie ?(<NavLink to='/logout'><Avatar alt="Avatar" src="https://www.superclouds.org/img/testimonials/male.png" sx={{backgroundColor:'white'}}/></NavLink>)
+               : (<NavLink to='/login'> <Button variant='contained'>LogIn/Signup</Button></NavLink>)
+              }
+              
               
            </Toolbar>
           
         </AppBar>
         <Box>
-          <Drawer variant='temperory' open={mobileopen} onClose={drawertoggle}
+          <Drawer variant='temporary' open={mobileopen} onClose={drawertoggle}
           sx={{display:{sx:'block',sm:'none'}}}
           >
               {drawer}

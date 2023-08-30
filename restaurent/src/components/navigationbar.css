@@ -107,3 +107,52 @@
     color: orange;
 
 }
+
+.ad-list{
+    color:white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+   padding-left: 0%;
+    margin-top: 80px;
+}
+.ad-list li a{
+    list-style-type: none;
+    margin-top: 5px;
+    padding-left: 15px;
+    cursor: pointer;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.ad-icons{
+    font-size: 5px;
+}
+.main{
+    position: absolute;
+    top: 110px;
+    left: 170px;
+    height: 490px;
+    width: 1030px;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+    
+}
+/* .ad-list li .active{
+    color: red;
+} */
+tr{
+    box-shadow: 3px 3px 5px black;
+}
+#th{
+    width: 50px;
+}
+td{
+    width: 295px;
+    text-align: center;
+}
+.hotel-tab td{
+    width: 100px;
+}

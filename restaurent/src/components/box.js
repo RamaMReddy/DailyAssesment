@@ -23,9 +23,9 @@ function Welcome() {
       </Box>
 
       <Box paddingTop={40} paddingLeft={5} textAlign={'center'} sx={{display:{xs:'none',sm:'block'}}} >
-      <Typography variant='h2' color={'white'}>Welcome to <q><b>Foot Court</b></q></Typography>
+      <Typography variant='h2' color={'white'}>Welcome to <q><b>Food Court</b></q></Typography>
       <Typography variant='h6' color={'white'}>The Native place of Healthy and Tasty Food</Typography>
-      <Link to='/menu' ><Button variant='contained' color='warning' endIcon={<DeliveryDiningIcon/>}> Order Now</Button> </Link>
+      <Link to='/restaurents' ><Button variant='contained' color='warning' endIcon={<DeliveryDiningIcon/>}> Order Now</Button> </Link>
       </Box>
       </Box>
     </div>

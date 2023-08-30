@@ -10,6 +10,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 function Footer() {
   return (
     <div>
+      <div className='footer'>
          <Box height={100} paddingLeft={5} paddingRight={5} sx={{display:{sm:'none'}, backgroundColor:'gray',}}>
             <Typography textAlign={'center'} fontWeight={'bold'}>Feedback:</Typography>
             <TextField placeholder='Write Something' type='text' fullWidth sx={{backgroundColor:'white',borderRadius:'10px'}}></TextField>
@@ -20,7 +21,7 @@ function Footer() {
           <ul className='nav-menu-foot'>
               <li><u>Links</u></li>
                <li><NavLink to='/'>Home</NavLink></li>
-               <li><NavLink to='/menu'>Menu</NavLink></li>
+               <li><NavLink to='/restaurents'>Restaurents</NavLink></li>
                <li><NavLink to='/about'>About</NavLink></li>
                <li><NavLink to='/contact'>Contact</NavLink></li>
                </ul>
@@ -44,6 +45,7 @@ function Footer() {
         <Box height={40} sx={{backgroundColor:'black', color:'white',textAlign:'center'}}> 
         <Typography variant='h6'>Copyright &copy; 2023</Typography>
         </Box>
+        </div>
     </div>
   )
 }

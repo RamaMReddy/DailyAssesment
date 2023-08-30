@@ -27,6 +27,22 @@
   color: white;
 }
 
+.errors{
+  width: 100%;
+  text-align: center;
+  color: red;
+  margin-left: 0%;
+  padding-left: 0%;
+  margin-top: 5PX;
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.468);
+  
+}
+
+.footer{
+  position: relative;
+  bottom: 0%;
+}
+
 .App-link {
   color: #61dafb;
 }
